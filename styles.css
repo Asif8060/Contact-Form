@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* header section */
+.container{
+    margin-top: 10px;
+}
+header{
+   margin: 0px 50px 0px 50px;
+   background-color: blueviolet;
+   padding: 30px 50px 30px 40px ;
+   border-radius: 100px 30px 70px 30px;
+   /* border-top-left-radius:100px ;
+   border-top-right-radius: 30px ;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 70px; */
+}
+header > h1,p{
+    color: blanchedalmond;
+}
+.word {
+    color: black;
+    text-align: right;
+}
+
+/* for section */
+form{
+    margin: 0px 100px 0px 100px;
+    background-color: rgb(208, 231, 236);
+    padding: 30px 50px 30px 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+label{
+    font-weight: bolder;
+    font-size: large;
+}
+input, select{
+    width: 500px;
+    height: 50px;
+    border: 2px solid rgb(69, 109, 221);
+    border-radius: 20px;
+    padding: 10px 0px 0px 10px;
+}
+textarea{
+    border: 2px solid rgb(69, 109, 221);
+    border-radius: 20px;
+    padding: 10px 0px 0px 10px;
+    
+}
+select > option{
+    color: rgb(109, 183, 218);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+input[type = "text"], input[type = email], select{
+    color: rgb(69, 109, 221);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+textarea {
+    font-weight: bolder;
+}
+::placeholder{
+    color: rgb(109, 183, 218);
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+/* button section */
+.btn{
+    margin-top: 10px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #ed6c0d;
+    font-size: 16px;
+    letter-spacing: .4px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #944504;
+}
+.btn:active {
+    background-color: orange;
+}
+
+/* footer section */
+footer{
+    position: relative; 
+    margin-top: 20px;
+    padding: 10px 10px 0px 10px; 
+    bottom: 0; 
+    width: 100%;  
+    height: 40px; 
+    text-align: center; 
+    background: grey; 
+}
+/* for responsive design */
+@media (max-width:746px) and (min-width:0px){
+.container{
+    width: max-content;
+    margin-right: 30px;
+    margin-left: 30px;
+    }
+ header{
+     margin: 0px;
+ }
+ form{
+     margin: 0px;
+ }
+  footer{
+    margin: 0px;
+  }
+}
